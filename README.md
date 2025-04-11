@@ -18,19 +18,19 @@ A fully local, lightweight chatbot interface powered by [Ollama](https://ollama.
 
 ```bash
 git clone https://github.com/your-username/ollama-streamlit-chatbot.git
-cd ollama-streamlit-chatbot
 ```
 
-### 2. Build the Docker Image
+### 2. Run Ollama server
 
 ```bash
-docker build -t ollama-chatbot .
+Ollama list
+Ollama run [model name]
 ```
 
-### 3. Run the Docker Container
+### 3. Run Streamlit
 
 ```bash
-docker run -p 8501:8501 ollama-chatbot
+streamlit run simple.py
 ```
 
 > ✅ **Note**: Make sure you have [Ollama](https://ollama.com/download) installed and running on your machine before starting the container.
